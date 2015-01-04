@@ -4,6 +4,7 @@ L.control.endToEndCursor
 Quite posibly the smallest leaflet plugin. Displays an extened cursor.
 I'm pretty sure this is **_the_** most inefficient way to do this. Currently it creates 
 two ginormous polylines and moves them around with the mouse.
+
 No options yet, currently you get a grey 1-pixel wide cursor.
 
 #### Usage
