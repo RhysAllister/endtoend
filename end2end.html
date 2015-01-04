@@ -13,7 +13,7 @@
  </body>
     
   <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
-  <script src="ovrly.js"></script>  
+  <script src="endtoend.js"></script>  
   
 <script src="http://coffeescript.org/extras/coffee-script.js"></script>
 
@@ -29,10 +29,12 @@ lyr = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
 
 map.addLayer lyr
 map.setView [18,-77], 10
-
+console.log 'll'
 
 url = 'http://static.auchindown.com/auchindown_clear/auchindown_02.png'
+console.log url
 qq =  L.control.endToEndCursor()
+
 map.addControl qq
 
 
