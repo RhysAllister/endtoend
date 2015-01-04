@@ -4,11 +4,11 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
   </head>
 
- <body>
-   <div><h1>ovrly1</h1></div>
+ <body style="margin: 0px">
+   <div><h1>L.control.endToEndCursor</h1></div>
    
    
-   <div id="ovrly" style="height: 400px"></div>
+   <div id="ovrly" style="height: 400px; width:100%; margin: 0px"></div>
    <div id="ee"></div>
  </body>
     
@@ -28,7 +28,7 @@ map = L.map 'ovrly'
 lyr = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png") 
 
 map.addLayer lyr
-map.setView [18,-77], 10
+map.setView [18,-77], 5
 console.log 'll'
 
 url = 'http://static.auchindown.com/auchindown_clear/auchindown_02.png'
