@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+  </head>
+
+ <body>
+   <div><h1>ovrly1</h1></div>
+   
+   
+   <div id="ovrly" style="height: 400px"></div>
+   <div id="ee"></div>
+ </body>
+    
+  <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+  <script src="ovrly.js"></script>  
+  
+<script src="http://coffeescript.org/extras/coffee-script.js"></script>
+
+<script type="text/coffeescript">
+
+map_opts =
+  center: 
+    lng: -77.2057
+    lat: 18.45865
+
+map = L.map 'ovrly'
+lyr = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png") 
+
+map.addLayer lyr
+map.setView [18,-77], 10
+
+
+url = 'http://static.auchindown.com/auchindown_clear/auchindown_02.png'
+qq =  L.control.endToEndCursor()
+map.addControl qq
+
+
+
+
+</script>
+</html>
